@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владлен Гылыпкылов](https://up.htmlacademy.ru/htmlcss/30/user/1700519).
-* Наставник: `Владислав Кривокора`.(https://up.htmlacademy.ru/htmlcss/30/user/167185)
+* Наставник:[Владислав Кривокора](https://up.htmlacademy.ru/htmlcss/30/user/167185)
 
 ---
 
