@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header_top">
+    <nav class="header_menu">
+      <a class="logo">
+        <img src="img/logo.png" alt="Логотип сайта Sedona" style="height: 60px; width: 138px;">
+      </a>
+      <ul>
+        <li class="header_item"><a href="#">информация</a></li>
+        <li class="header_item"><a href="#">фото и видео</a></li>
+        <li class="header_item"><a href="#">карта штата</a></li>
+        <li class="header_item"><a href="#">гостиницы</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="search">
+        <h2 class="search_name">фильтр поиска жилья</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="search_option">
+            <h2>инфраструктура:</h2>
+            <label for="">бассейн
+              <input type="text">
+            </label>
+            <label for="">парковка
+              <input type="text">
+            </label>
+            <label for="">wi-fi
+              <input type="text">
+            </label>
+          </div>
+          <div class="search_house">
+            <h2>тип жилья:</h2>
+            <label for="">гостиница
+              <input type="text">
+            </label>
+            <label for="">мотель
+              <input type="text">
+            </label>
+            <label for="">апартаменты
+              <input type="text">
+            </label>
+          </div>
+          <div class="filter-price">
+            <div class="price-title">стоимость в сутки (р):</div>
+            <div class="price-control">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="cost-control">
+              <div class="spread">
+                <div class="bar"></div>
+              </div>
+              <div class="spread_min"></div>
+              <div class="spread_max"></div>
+            </div>
+            <button class="btn" type="submit">показать</button>
+          </div>
+        </form>
+      </section>
+      <section class="search-hotel">
+        <h2 class="visually-hidden">результат поиска гостиниц</h2>
+        <header>
+          <h2>найдено: 3</h2>
+          <h3>сортировка:</h3>
+          <ul class="list-sorting-type">
+            <li><a href="">по цене</a></li>
+            <li><a href="">по типу</a></li>
+            <li><a href="">по рейтингу</a></li>
+          </ul>
+          <ul class="list-sorting">
+            <li><a href="" class="sort-up"></a></li>
+            <li><a href="" class="sort-down"></a></li>
+          </ul>
+        </header>
+        <section class="hotel-list">
+          <h2 class="visually-hidden">выбор гостиницы</h2>
+          <article class="hotel-item">
+            <div class="hotel-photo">
+              <img src="" alt="Фотография" width="135" height="90">
+            </div>
+            <div class="hotel-info">
+              <h1 class="hotel-name">amara resort & spa</h1>
+              <p class="hotel-type">гостиница</p>
+              <p class="hotel-value">от 4000 р.</p>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+              <p class="rating-value">рейтинг: 8,5</p>
+            </div>
+          </article>
+          <article class="hotel-item">
+            <div class="hotel-photo">
+              <img src="" alt="фотография" width="135" height="90">
+            </div>
+            <div class="hotel-info">
+              <h1 class="hotel-name">desert quail inn</h1>
+              <p class="hotel-type">мотель</p>
+              <p class="hotel-value">от 3000 р.</p>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars">&#9733;&#9733;&#9733;</span>
+              <p class="rating-value">рейтинг: 8,9</p>
+            </div>
+          </article>
+          <article class="hotel-item">
+            <div class="hotel-photo">
+              <img src="" alt="Фотография" width="135" height="90">
+            </div>
+            <div class="hotel-info">
+              <h1 class="hotel-name">villas at poco diablo</h1>
+              <p class="hotel-type">апартаменты</p>
+              <p class="hotel-value">от 2000 р.</p>
+            </div>
+            <div class="hotel-rating">
+              <span class="stars">&#9733;&#9733;</span>
+              <p class="rating-value">рейтинг: 9,2</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+
+
+    <footer class="footer">
+      <nav class="footer_section">
+        <div class="phone">
+          <p><a>#visitsedona</a></p>
+          <a class="phone_item" href="+7(495)666-01-66">+7(495)666-01-66</a>
+        </div>
+        <div class="footer_img">
+          <a href="https://twitter.com">
+            <img class="footer_img_item" src="" alt="твиттер" style="width:17px; height:17px;">
+          </a>
+          <a href="https://facebook.com">
+            <img class="footer_img_item" src="" alt="фейсбук" style="width:17px; height:17px;">
+          </a>
+          <a href="https://youtube.com">
+            <img class="footer_img_item" src="" alt="ютуб" style="width:17px; height:17px;">
+          </a>
+        </div>
+        <div class="footer_from">
+          <p>Website by</p>
+          <img src="img/htmlacademy.png" alt="" style="width:115px; height: 41px;">
+        </div>
+      </nav>
+
+    </footer>
