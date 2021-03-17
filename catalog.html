@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -20,13 +20,9 @@
       <ul class="header-menu">
         <li class="header-item"><a href="#">Информация</a></li>
         <li class="header-item"><a href="#">Фото и видео</a></li>
-      </ul>
-    </nav>
-    <a class="logo">
-      <img src="img/logo.png" alt="Логотип сайта Sedona" style="height: 60px; width: 138px;">
-    </a>
-    <nav class="page-menu">
-      <ul class="header-menu">
+        <a class="logo" href="/index.html">
+          <img src="img/logo.png" alt="Логотип сайта Sedona" style="height: 60px; width: 138px;">
+        </a>
         <li class="header-item"><a href="#">Карта штата</a></li>
         <li class="header-item"><a href="#">Гостиницы</a></li>
       </ul>
@@ -96,7 +92,7 @@
 
     <section class="catalog-hotel">
       <h2 class="visually-hidden">Результат поиска гостиниц</h2>
-      <section class="search-result">
+      <div class="search-result">
         <h3 class="catalog-found">Найдено: 3</h3>
         <div class="catalog-sorting">
           <p class="catalog-sort">Сортировка:</p>
@@ -110,70 +106,70 @@
           <li><a href="" class="sort-up"><img src="img/icon-up.png" alt="Стрелка вверх"></a></li>
           <li><a href="" class="sort-down"><img src="img/icon-down.png" alt="Стрелка вниз"></a></li>
         </ul>
-      </section>
-      <section class="hotel-list">
+      </div>
+      <ul class="hotel-list">
         <h2 class="visually-hidden">Выбор гостиницы</h2>
-        <ul class="hotel-item">
-          <li class="hotel-photo">
+        <li class="hotel-item">
+          <div class="hotel-photo">
             <img src="img/amara.png" alt="Фотография" width="135" height="90">
-          </li>
-          <li class="hotel-info">
+          </div>
+          <div class="hotel-info">
             <h3 class="hotel-name">Amara resort & spa</h3>
             <div class="hotel-price">
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-value">От 4000 р.</p>
             </div>
             <p class="hotel-button">
-              <button class="hotel-btn-first" type="submit">Подробнее</button>
-              <button class="hotel-btn-second" type="submit">Забронировать</button>
+              <a class="hotel-first" href="#">Подробнее</a>
+              <a class="hotel-second" href="#">Забронировать</a>
             </p>
-          </li>
-          <li class="hotel-rating">
+          </div>
+          <div class="hotel-rating">
             <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
             <p class="rating-value">Рейтинг: 8,5</p>
-          </li>
-        </ul>
-        <ul class="hotel-item">
-          <li class="hotel-photo">
+          </div>
+        </li>
+        <li class="hotel-item">
+          <div class="hotel-photo">
             <img src="img/desert.png" alt="фотография" width="135" height="90">
-          </li>
-          <li class="hotel-info">
+          </div>
+          <div class="hotel-info">
             <h3 class="hotel-name">Desert quail inn</h3>
             <div class="hotel-price">
               <p class="hotel-type">Мотель</p>
               <p class="hotel-value">От 3000 р.</p>
             </div>
             <p class="hotel-button">
-              <button class="hotel-btn-first" type="submit">Подробнее</button>
-              <button class="hotel-btn-second" type="submit">Забронировать</button>
+              <a class="hotel-first">Подробнее</a>
+              <a class="hotel-second">Забронировать</a>
             </p>
-          </li>
-          <li class="hotel-rating">
+          </div>
+          <div class="hotel-rating">
             <span class="stars">&#9733;&#9733;&#9733;</span>
             <p class="rating-value">Рейтинг: 8,9</p>
-          </li>
-        </ul>
-        <ul class="hotel-item">
-          <li class="hotel-photo">
+          </div>
+        </li>
+        <li class="hotel-item">
+          <div class="hotel-photo">
             <img src="img/villas.png" alt="Фотография" width="135" height="90">
-          </li>
-          <li class="hotel-info">
+          </div>
+          <div class="hotel-info">
             <h3 class="hotel-name">Villas at poco diablo</h3>
             <div class="hotel-price">
               <p class="hotel-type">Апартаменты</p>
               <p class="hotel-value">От 2000 р.</p>
             </div>
             <p>
-              <button class="hotel-btn-first" type="submit">Подробнее</button>
-              <button class="hotel-btn-second" type="submit">Забронировать</button>
+              <a class="hotel-first" href="#">Подробнее</a>
+              <a class="hotel-second" href="#">Забронировать</a>
             </p>
-          </li>
-          <li class="hotel-rating">
+          </div>
+          <div class="hotel-rating">
             <span class="stars">&#9733;&#9733;</span>
             <p class="rating-value">Рейтинг: 9,2</p>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 
@@ -183,17 +179,11 @@
         <p>#visitsedona</p>
         <a class="phone-item" href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
       </div>
-      <div class="footer-img">
-        <a href="https://twitter.com">
-          <img class="footer-img-item" src="img/twitter.png" alt="твиттер" style="width:17px; height:17px;">
-        </a>
-        <a href="https://facebook.com"><img class="footer-img-item" src="img/facebook.png" alt="фейсбук"
-            style="width:17px; height:17px;">
-        </a>
-        <a href="https://youtube.com"><img class="footer-img-item" src="img/youtube.png" alt="ютуб"
-            style="width:17px; height:17px;">
-        </a>
-      </div>
+      <ul class="footer-img">
+        <li class="footer-img-first"><a href="https://twitter.com"></a></li>
+        <li class="footer-img-second"><a href="https://facebook.com"></a></li>
+        <li class="footer-img-third"><a href="https://youtube.com"></a></li>
+      </ul>
       <div class="footer-from">
         <p>Website by</p>
         <img src="img/htmlacademy.png" alt="" style="width:115px; height: 41px;">

@@ -9,8 +9,21 @@
    --basic-light-grey: #eeeeee;
    --basic-light-dark: #231F20;
 }
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }
 .page{
    height: 100%;
+   min-width: 1200px;
 }
 .page-body{
    width: 1200px;
@@ -19,6 +32,8 @@
    border:0 40px 0 40px solid#F2F2F2;
    margin: 0 40px 0 40px;
    display: grid;
+   grid-template-rows: min-content 1fr min-content;
+   box-shadow: rgba(255, 255, 255, 1);
 }
 h2{
    font-weight: 700;
@@ -28,9 +43,14 @@ a{
    text-transform: uppercase;
    text-decoration: none;
    color: #000000;
+
 }
 li{
    list-style-type:none
+}
+img{
+   max-width: 100%;
+   height: auto;
 }
 .header{
    display:flex;
@@ -58,7 +78,6 @@ li{
    margin-top: 0;
    z-index: 10;
 }
-
 main{
    border:0 40px 0 40px solid#F2F2F2;
 }
@@ -68,7 +87,8 @@ h1{
 .welcome-content{
    text-align: center;
    height:509px;
-   padding-top: 27px;
+   padding-top: 45px;
+   background-image: url("../img/bg.png");
    background-repeat: no-repeat;
 }
 .sedona{
@@ -213,7 +233,7 @@ input{
    width: 346px;
    height: 38px;
    padding-left: 13px;
-   background:url(../img/calendar.png);
+   background:url("../img/calendar.png");
    background-repeat: no-repeat;
    background-position:right ;
    background-color:#f2f2f2;
@@ -267,10 +287,36 @@ input[type="number"] {
    margin-top: -4px;
    
 }
-.footer-img-item{
-  width: 46px;
-  height: 48px;
-  background-color: #81B3D2;
+.footer-img{
+display: flex;
+  align-items: center;
+}
+.footer-img-first{
+   background-image: url("../img/twitter.svg");
+   background-repeat: no-repeat;
+   width: 46px;
+   height: 48px;
+   background-color: #81B3D2;
+   background-position: center;
+   margin-right: 6px;
+   
+}
+.footer-img-second{
+   background-image: url("../img/facebook.png");
+   background-repeat: no-repeat;
+   width: 46px;
+   height: 48px;
+   background-color: #81B3D2;
+   background-position: center;
+   margin-right: 6px;
+}
+.footer-img-third{
+   background-image: url("../img/youtube.png");
+   background-repeat: no-repeat;
+   width: 46px;
+   height: 48px;
+   background-color: #81B3D2;
+   background-position: center;
 }
 .footer-from{
    display: flex;
@@ -282,7 +328,7 @@ input[type="number"] {
    text-align: center;
 }
 .search-catalog{
-   background-image: url(../img/bgcatalog.png);
+   background-image: url("../img/bgcatalog.png");
    background-repeat: no-repeat;
    height: 217px;
 }
@@ -379,6 +425,9 @@ fieldset{
 .sort-up{
    margin-right: 12px;
 }
+.hotel-list{
+   padding: 0;
+}
 .hotel-item{
    height: 150px;
    padding-left: 73px;
@@ -394,6 +443,17 @@ fieldset{
 }
 .hotel-info{
    text-transform: uppercase;
+}
+.hotel-first{
+   background: #81B3D2;
+   color: #ffffff;
+   padding: 3px 17px;
+}
+.hotel-second{
+   background: #766357;
+   color: #ffffff;
+   padding: 3px 17px;
+
 }
 .hotel-name{
    font-weight: 700;
@@ -443,6 +503,7 @@ fieldset{
    margin-right: 73px;
    color: #81B3D2;
    padding-top: 30px;
+   text-align: right;
 }
 .rating-value{
    color: #000000;
@@ -451,4 +512,7 @@ fieldset{
    line-height: 21px;
    margin-top: 47px;
    text-transform: uppercase;
+   background-color: #F2F2F2;
+   padding: 3px 15px;
+   
 }
