@@ -21,7 +21,7 @@
         <li class="header-item"><a href="#">Информация</a></li>
         <li class="header-item"><a href="#">Фото и видео</a></li>
         <a class="logo">
-          <img src="img/logo.png" alt="Логотип сайта Sedona" style="height: 70px; width: 138px;">
+          <img src="img/logo.png" alt="Логотип сайта Sedona">
         </a>
         <li class="header-item"><a href="#">Карта штата</a></li>
         <li class="header-item"><a href="/catalog.html">Гостиницы</a></li>
@@ -53,29 +53,29 @@
           <p class="img-sity"><img src="img/sity.png" alt="sity" style="width:800px; height:256px"></p>
         </div>
       </div>
-      <div class="services-items">
-        <article class="services-item">
+      <ul class="services-items">
+        <li class="services-item">
           <div class="servises-servises">
             <img src="img/home.png" alt="home" style="width:75px; height:72px">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
           </div>
-        </article>
-        <article class="services-item">
+        </li>
+        <li class="services-item">
           <div class="services-img"><img src="img/food.png" alt="food" style="width:75px; height:72px"></div>
           <div class="services-text">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
           </div>
-        </article>
-        <article class="services-item">
+        </li>
+        <li class="services-item">
           <div class="services-img"><img src="img/souvenir.png" alt="souvenir" style="width:75px; height:72px"></div>
           <div class="services-text">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного <br>производства!</p>
           </div>
-        </article>
-      </div>
+        </li>
+      </ul>
       <div class="services">
         <div class="bridge">
           <p class="img-bridge"><img src="img/bridge.png" alt="bridge" style="width:800px; height:256px;"></p>
@@ -86,66 +86,73 @@
           </div>
         </div>
       </div>
-      <div class="services-text-item">
-        <div class="text>">
+      <ul class="services-text-item">
+        <li class="text>">
           <h2>Небольшая <br> площадь</h2>
           <p>— №3 —</p>
           <p>Все достопримечательности <br> находятся очень близко</p>
-        </div>
-        <div class="text">
+        </li>
+        <li class="text">
           <h2>Красивая <br> дорога</h2>
           <p>— №4 —</p>
           <p>Ехать в седону из лас-вегаса совсем <br>не скучно!</p>
-        </div>
-        <div class="text">
+        </li>
+        <li class="text">
           <h2>Мало <br> туристов</h2>
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон <br>и толпится там</p>
-        </div>
-      </div>
-      <div class="content-item">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
+        </li>
+      </ul>
     </section>
+
     <section class="search">
       <div class="search-hotel">
-        <h3>Поиск гостиницы в седоне</h3>
+        <p class="search-title">Заинтересовались?</p>
+        <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+          Седоне</p>
+        <a class="search-modal" href="#form-modal-window">Поиск гостиницы в седоне</a>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209540.72208672512!2d-111.93530069597175!3d34.85437335636785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1616126297372!5m2!1sru!2sru"
+        width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      </div>
+    </section>
+    <section class="form-modal" id="form-modal-window">
 
-      <section class="form-modal" style="background-image:url(img/map.png)">
-        <div class="modal-content">
-          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="modal-in">
-              <label for="date-in">Дата заезда:</label>
-              <input id="date-in" type="date" name="data" value="2017-04-24">
-            </p>
-            <br>
-            <p class="modal-out">
-              <label for="date-out">Дата выезда:</label>
-              <input id="date-out" type="date" value="2017-07-04">
-            </p>
-            <br>
-            <div class="modal-client">
-              <label for="adults">Взрослые:</label>
-              <p>
-                <input type="submit" value="-">
-                <input id="adults" type="number" name="adult" value="2">
-                <input type="submit" value="+">
-              </p>
-              <label for="сhild">Дети:</label>
-              <p>
-                <input type="submit" value="-">
-                <input id="child" type="number" name="children" value="0">
-                <input type="submit" value="+">
-              </p>
-            </div>
+      <div class="modal-content">
+        <a href="#close-window" class="close-window">X</a>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-in">
+            <label for="date-in">Дата заезда:</label>
+            <input id="date-in" type="date" name="data" value="2017-04-24">
+          </p>
+          <br>
+          <p class="modal-out">
+            <label for="date-out">Дата выезда:</label>
+            <input id="date-out" type="date" value="2017-07-04">
+          </p>
+          <br>
+          <div class="modal-client">
+            <label for="adults">Взрослые:</label>
             <p>
-              <button class="modal-btn" type="submit">Найти</button>
+              <input type="submit" value="-">
+              <input id="adults" type="number" name="adult" value="2">
+              <input type="submit" value="+">
             </p>
-          </form>
-        </div>
-      </section>
+            <label for="сhild">Дети:</label>
+            <p>
+              <input type="submit" value="-">
+              <input id="child" type="number" name="children" value="0">
+              <input type="submit" value="+">
+            </p>
+          </div>
+          <div>
+            <a class="modal-btn" href="#">Найти</a>
+          </div>
+        </form>
+      </div>
+      <div class="map-responsive">
     </section>
   </main>
 
@@ -162,11 +169,11 @@
       </ul>
       <div class="footer-from">
         <p>Website by</p>
-        <img src="img/htmlacademy.png" alt="" style="width:115px; height: 41px;">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" alt="Логотип Академии"
+            style="width:115px; height: 41px;"></a>
       </div>
     </nav>
   </footer>
-
 </body>
 
 </html>
