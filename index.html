@@ -14,15 +14,14 @@
 </head>
 
 <body class="page-body">
-
-  <header class="header">
+  <header class="page-header">
     <nav class="page-menu">
-      <ul class="header-menu">
+      <a class="logo">
+        <img src="img/logo.png" alt="Логотип сайта Sedona">
+      </a>
+      <ul class="site-navigation">
         <li class="header-item"><a href="#">Информация</a></li>
         <li class="header-item"><a href="#">Фото и видео</a></li>
-        <a class="logo">
-          <img src="img/logo.png" alt="Логотип сайта Sedona">
-        </a>
         <li class="header-item"><a href="#">Карта штата</a></li>
         <li class="header-item"><a href="/catalog.html">Гостиницы</a></li>
       </ul>
@@ -116,10 +115,9 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209540.72208672512!2d-111.93530069597175!3d34.85437335636785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1616126297372!5m2!1sru!2sru"
         width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
-      </div>
     </section>
-    <section class="form-modal" id="form-modal-window">
 
+    <section class="form-modal" id="form-modal-window">
       <div class="modal-content">
         <a href="#close-window" class="close-window">X</a>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
@@ -136,23 +134,22 @@
           <div class="modal-client">
             <label for="adults">Взрослые:</label>
             <p>
-              <input type="submit" value="-">
-              <input id="adults" type="number" name="adult" value="2">
-              <input type="submit" value="+">
+              <button type="button">-</button>
+              <input id=" adults" type="number" name="adult" value="2">
+              <button type="button" name="plus">+</button>
             </p>
             <label for="сhild">Дети:</label>
             <p>
-              <input type="submit" value="-">
+              <button type="button" name="minus">-</button>
               <input id="child" type="number" name="children" value="0">
-              <input type="submit" value="+">
+              <button type="button" name="plus">+</button>
             </p>
           </div>
           <div>
-            <a class="modal-btn" href="#">Найти</a>
+            <p><a class="modal-btn" href="#">Найти</a></p>
           </div>
         </form>
       </div>
-      <div class="map-responsive">
     </section>
   </main>
 
@@ -174,6 +171,7 @@
       </div>
     </nav>
   </footer>
+
 </body>
 
 </html>
