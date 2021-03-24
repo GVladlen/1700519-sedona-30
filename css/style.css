@@ -636,16 +636,30 @@ fieldset {
   padding-top: 30px;
   text-align: right;
 }
-.star-item {
-  max-width: 18px;
-  max-height: 17px;
+.stars-amara {
+  width: 78px;
+  height: 17px;
+  background: url("../img/star.svg");
+  background-repeat: repeat;
+}
+.stars-desert {
+  width: 58px;
+  height: 17px;
+  background: url("../img/star.svg");
+  background-repeat: repeat;
+}
+.stars-villas {
+  width: 38px;
+  height: 17px;
+  background: url("../img/star.svg");
+  background-repeat: repeat;
 }
 .rating-value {
   color: var(--basic-black);
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 47px;
+  margin-top: 30px;
   text-transform: uppercase;
   background-color: var(--basic-light-grey);
   padding: 3px 15px;
