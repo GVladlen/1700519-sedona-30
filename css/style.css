@@ -262,7 +262,9 @@ main {
 .search-modal:active {
   background-color: #503e33;
 }
-
+.maps {
+  padding-top: 30px;
+}
 .form-modal {
   width: 568px;
   height: 594px;
@@ -281,7 +283,7 @@ main {
   margin: 0 auto;
   background: #ffffff;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  padding: 55px;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -299,6 +301,10 @@ input {
   text-align: left;
   display: flex;
   flex-direction: column;
+  padding: 55px;
+}
+.modal-in {
+  margin: 0;
 }
 .modal-in input,
 .modal-out input {
@@ -309,11 +315,11 @@ input {
   background-repeat: no-repeat;
   background-position: right;
   background-color: var(--basic-light-grey);
-}
-.modal-client input {
-  width: 114px;
-  height: 38px;
-  text-align: center;
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 .modal-client {
   display: flex;
@@ -321,9 +327,15 @@ input {
   justify-content: space-between;
   width: 458px;
 }
-input[type="submit"] {
-  width: 20px;
-  height: 20px;
+.modal-search {
+  width: 124px;
+  min-height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+button[type="button"] {
+  width: 35px;
+  height: 38px;
   border: none;
   background-color: var(--basic-light-grey);
 }
@@ -333,6 +345,10 @@ input[type="number"] {
   -webkit-appearance: none;
   vertical-align: middle;
   text-align: center;
+  width: 64px;
+}
+.search img {
+  margin-top: 50%;
 }
 .modal-btn {
   width: 458px;
@@ -506,6 +522,10 @@ fieldset {
 .sort-up {
   margin-right: 12px;
 }
+.sort-img {
+  width: 10px;
+  height: 11px;
+}
 .hotel-list {
   padding: 0;
 }
@@ -520,6 +540,10 @@ fieldset {
 }
 .hotel-photo {
   padding-top: 30px;
+}
+.hotel-photo-item {
+  width: 135px;
+  height: 90px;
 }
 .hotel-info {
   text-transform: uppercase;
@@ -611,6 +635,10 @@ fieldset {
   color: var(--basic-blue);
   padding-top: 30px;
   text-align: right;
+}
+.star-item {
+  max-width: 18px;
+  max-height: 17px;
 }
 .rating-value {
   color: var(--basic-black);
